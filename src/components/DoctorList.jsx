@@ -2,6 +2,7 @@ import React from "react";
 import DoctorCard from "./DoctorCard";
 import prerana from "../assets/images/image.png";
 import riya from "../assets/images/image2.png"
+import alisha from "../assets/images/image3.png"
 
 const DoctorList = () => {
   const doctors = [
@@ -24,7 +25,7 @@ const DoctorList = () => {
       rating: 4.8,
     },
     {
-      image: "https://randomuser.me/api/portraits/women/3.jpg",
+      image: alisha,
       name: "Dr. Alisha Verma",
       specialization: "Dermatologist",
       experience: 5,
