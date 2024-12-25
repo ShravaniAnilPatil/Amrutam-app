@@ -8,13 +8,13 @@ import ReviewSection from "../components/ReviewSection";
 
 const ProfilePage = () => {
   const doctor = {
-    name: "Dr. Bruce Willis",
+    name: " Prerna Narang",
     specialty: "Gynecologist",
     rating: 4.2,
     followers: 850,
     following: 18000,
     posts: 250,
-    appointmentFee: 699,
+    appointmentFee: 800,
     languages: ["English", "Hindi", "Telugu"],
     socialLinks: {
       instagram: "#",
@@ -23,7 +23,7 @@ const ProfilePage = () => {
       twitter: "#",
     },
     about:
-      "Hello! I am Dr. Bruce Willis, a Gynecologist at Sanjivni Hospital in Surat. I love to work with hospital staff and senior doctors. Completed my graduation in Gynecology Medicine from the University of Health Sciences.",
+      "Hello! I am Dr. Prerana Narang, a Gynecologist at Sanjivni Hospital in Surat. I love to work with hospital staff and senior doctors. Completed my graduation in Gynecology Medicine from the University of Health Sciences.",
     specializations: ["Women’s Health", "Skin Care", "Immunity", "Hair Care"],
     timeSlots: {
       "10 Oct": ["9:30 AM", "10:00 AM", "10:15 AM"],

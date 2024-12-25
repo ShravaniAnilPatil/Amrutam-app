@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center bg-lightpeach text-sapgreen p-4">
       <div className="flex items-center">
-        <img className="h-16 w-26 rounded-full" src={logo} alt="Logo" />
+        <img className="h-16 w-26 rounded-full ml-10" src={logo} alt="Logo" />
         <nav className="ml-20 hidden md:block">
           <ul className="flex space-x-7 font-bold font-sans">
             <li>
@@ -28,7 +28,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="flex items-center space-x-4">
-        <button className="bg-white text-gray-800 py-2 px-4 rounded hover:bg-gray-200 font-bold ">
+        <button className="bg-white text-gray-800 py-2 px-4 rounded hover:bg-gray-200 font-bold">
           Login
         </button>
         <button className="bg-green-700 text-white py-2 px-4 rounded hover:bg-green-800 font-bold">

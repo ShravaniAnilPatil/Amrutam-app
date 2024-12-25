@@ -1,10 +1,12 @@
 import React from "react";
 import DoctorCard from "./DoctorCard";
+import prerana from "../assets/images/image.png";
+import riya from "../assets/images/image2.png"
 
 const DoctorList = () => {
   const doctors = [
     {
-      image: "https://randomuser.me/api/portraits/women/1.jpg",
+      image: prerana,
       name: "Dr. Prerna Narang",
       specialization: "Male-Female Infertility",
       experience: 7,
@@ -13,7 +15,7 @@ const DoctorList = () => {
       rating: 4.5,
     },
     {
-      image: "https://randomuser.me/api/portraits/women/2.jpg",
+      image: riya,
       name: "Dr. Riya Sharma",
       specialization: "Cardiologist",
       experience: 10,

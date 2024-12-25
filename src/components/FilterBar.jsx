@@ -23,7 +23,7 @@ const FilterBar = () => {
         )
       );
     } else {
-     setActiveFilters([...activeFilters, { type, label: value }]);
+      setActiveFilters([...activeFilters, { type, label: value }]);
     }
   };
 
@@ -34,7 +34,7 @@ const FilterBar = () => {
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md mt-4">
-      <div className="flex flex-wrap items-center gap-2 justify-between">
+      <div className="flex flex-wrap items-center justify-evenly"> 
         <select
           className="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-green-200 focus:outline-none"
           value={filters.expertise}

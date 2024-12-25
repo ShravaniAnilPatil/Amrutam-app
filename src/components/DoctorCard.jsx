@@ -9,20 +9,20 @@ const DoctorCard = ({ doctor }) => {
   };
 
   return (
-    <div className="bg-[#fffbeb] rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 max-w-xs mx-auto">
+    <div className="bg-[#fffbeb] rounded-2xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 max-w-md mx-auto"> {/* Increased width and roundness */}
       <div className="flex justify-center flex-col items-center">
         <img
-          className="h-30 w-30 rounded-full object-cover"
+          className="h-32 w-32 rounded-full object-cover"
           src={doctor.image}
           alt={doctor.name}
         />
         <div className="flex items-center justify-center mt-2">
-          <span className="bg-yellow-500 text-white text-sm px-2 py-1 rounded-full font-medium flex items-center gap-1">
-            {doctor.rating} ★
+          <span className="bg-black text-white text-sm px-1 py-1 rounded-full font-medium flex items-center gap-1">
+            {doctor.rating} <span className="text-yellow-400">★</span>
           </span>
         </div>
       </div>
-      <h3 className="text-xl font-semibold text-sapgreen text-center mt-4">
+      <h3 className="text-3xl font-semibold text-black  text-center mt-4">
         {doctor.name}
       </h3>
       <div className="flex items-center mt-4 text-gray-500 text-sm">
@@ -45,7 +45,6 @@ const DoctorCard = ({ doctor }) => {
             </p>
             <p className="text-gray-800 font-semibold">₹{doctor.videoFee}</p>
           </div>
-       
           <div className="flex-1 text-center">
             <p className="flex items-center justify-center text-gray-500 text-sm">
               <FaComments className="mr-2" /> Chat Consultation

@@ -8,15 +8,13 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <Router>
-      <div className="font-sans bg-gray-100 min-h-screen">
+      <div className="font-sans min-h-screen">
         <Header />
-        <div className="min-h-screen">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/profile/:id" element={<ProfilePage />} />
           </Routes>
         </div>
-      </div>
     </Router>
   );
 };
