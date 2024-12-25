@@ -38,15 +38,16 @@ const DoctorCard = ({ doctor }) => {
         <span>Speaks: {doctor.languages.join(", ")}</span>
       </div>
       <div className="mt-6">
-        <div className="flex justify-between items-center gap-4 border-b pb-4 mb-4">
-          <div className="flex-1 text-center border-r border-gray-300">
-            <p className="flex items-center justify-center text-gray-500 text-sm">
+        <div className="grid grid-cols-2 gap-4 border-b pb-4 mb-4">
+          <div className="border border-gray-300 rounded-lg p-4 flex flex-col items-center bg-gray-50">
+            <p className="flex items-center justify-center text-gray-500 text-sm mb-2">
               <FaVideo className="mr-2" /> Video Consultation
             </p>
             <p className="text-gray-800 font-semibold">₹{doctor.videoFee}</p>
           </div>
-          <div className="flex-1 text-center">
-            <p className="flex items-center justify-center text-gray-500 text-sm">
+
+          <div className="border border-gray-300 rounded-lg p-4 flex flex-col items-center bg-gray-50">
+            <p className="flex items-center justify-center text-gray-500 text-sm mb-2">
               <FaComments className="mr-2" /> Chat Consultation
             </p>
             <p className="text-gray-800 font-semibold">Free</p>
@@ -60,7 +61,7 @@ const DoctorCard = ({ doctor }) => {
         >
           View Profile
         </button>
-        <button className="bg-huegreen text-white font-medium px-4 py-2 rounded-lg">
+        <button className="bg-[#065f46] text-white font-medium px-4 py-2 rounded-lg">
           Book a consultation
         </button>
       </div>

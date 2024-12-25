@@ -38,8 +38,6 @@ const SpecializationBadges = () => {
           </div>
         ))}
       </div>
-
-      {/* The Concerns I Treat Section */}
       <div className="mt-8">
         <h3 className="text-lg font-medium">The Concerns I Treat</h3>
         <div className="flex flex-wrap gap-3 mt-4">
