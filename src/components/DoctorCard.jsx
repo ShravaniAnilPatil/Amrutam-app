@@ -9,7 +9,7 @@ const DoctorCard = ({ doctor }) => {
   };
 
   return (
-    <div className="bg-[#fffbeb] rounded-2xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 max-w-md mx-auto"> {/* Increased width and roundness */}
+    <div className="bg-[#fffbeb] rounded-2xl shadow-lg shadow-gray-200 p-6 hover:shadow-xl hover:shadow-gray-300 transition-shadow duration-300 max-w-md mx-auto">
       <div className="flex justify-center flex-col items-center">
         <img
           className="h-32 w-32 rounded-full object-cover"
@@ -22,7 +22,7 @@ const DoctorCard = ({ doctor }) => {
           </span>
         </div>
       </div>
-      <h3 className="text-3xl font-semibold text-black  text-center mt-4">
+      <h3 className="text-3xl font-semibold text-black text-center mt-4">
         {doctor.name}
       </h3>
       <div className="flex items-center mt-4 text-gray-500 text-sm">
@@ -54,7 +54,10 @@ const DoctorCard = ({ doctor }) => {
         </div>
       </div>
       <div className="mt-6 flex flex-col gap-4">
-        <button className="border border-huegreen text-huegreen font-medium px-4 py-2 rounded-lg"  onClick={handleClick}>
+        <button
+          className="border border-huegreen text-huegreen font-medium px-4 py-2 rounded-lg"
+          onClick={handleClick}
+        >
           View Profile
         </button>
         <button className="bg-huegreen text-white font-medium px-4 py-2 rounded-lg">
