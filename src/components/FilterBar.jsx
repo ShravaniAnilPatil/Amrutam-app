@@ -34,7 +34,7 @@ const FilterBar = () => {
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md mt-4">
-      <div className="flex flex-wrap items-center justify-evenly"> 
+      <div className="flex flex-wrap items-center justify-evenly">
         <select
           className="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-green-200 focus:outline-none"
           value={filters.expertise}
@@ -75,11 +75,11 @@ const FilterBar = () => {
           Apply Filters
         </button>
       </div>
-      <div className="flex flex-wrap gap-2 mt-3">
+      <div className="flex justify-end flex-wrap gap-2 mt-3">
         {activeFilters.map((filter) => (
           <div
             key={filter.type}
-            className="flex items-center bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+            className="flex items-center bg-gray-100 text-gray-700 px-5 py-3 rounded-full text-sm" 
           >
             <span>{filter.label}</span>
             <button
