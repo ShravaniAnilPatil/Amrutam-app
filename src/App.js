@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import Header from "./components/Header";
 import AboutPage from "./pages/AboutPage";
+import FindDoctorPage from './pages/FindDoctorPage';
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/profile/:id" element={<ProfilePage />} />
                         <Route path="/about-us" element={<AboutPage />} />
+                        <Route path="/find-doctors" element={<FindDoctorPage />} />
+
+                        
 
           </Routes>
         </div>
