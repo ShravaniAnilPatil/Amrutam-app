@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from "react";
 
-/** --- Mock data (replace with API later) --- */
 const DOCTORS = [
   {
     id: 1,
